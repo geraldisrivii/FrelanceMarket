@@ -1,0 +1,29 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+  max-width: $max-width;
+  margin: 0 auto;
+  overflow: hidden;
+}
+ul{
+  list-style: none;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}

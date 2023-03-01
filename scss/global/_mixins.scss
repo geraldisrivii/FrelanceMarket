@@ -1,0 +1,32 @@
+@mixin clearfix {
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+  @mixin phone {
+    @media ( max-width: $breakpoint_phone ) {
+      @content;
+    }
+  }
+  @mixin min_table {
+    @media ( max-width: $breakpoint_min_table ) {
+      @content;
+    }
+  }
+  @mixin table {
+    @media ( max-width: $breakpoint_table ) {
+      @content;
+    }
+  }
+  @mixin laptop {
+    @media ( max-width: $breakpoint_laptop ) {
+      @content;
+    }
+  }
+  @mixin adaptive_images {
+    @media ( min-width: $breakpoint_adaptive_image) and (min-resolution: 192dpi) {
+      @content;
+    }
+  }

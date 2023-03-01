@@ -1,0 +1,28 @@
+// * Global
+@import "global/variables";
+@import "global/mixins";
+@import "global/typography";
+@import "global/global";
+
+// ? Components
+@import "components/_nav_bar";
+
+// ! Pages
+
+// landing page
+
+@import 'pages/landing/_first_section.scss';
+/* @import 'pages/landing/_second_section.scss';
+@import 'pages/landing/_third_section.scss';
+@import 'pages/landing/_fourth_section.scss';
+@import 'pages/landing/_fifth_section.scss';
+@import 'pages/landing/_sixth_section.scss'; */
+
+// Singup page
+
+@import 'pages/signup/_first_section.scss';
+/* @import 'pages/signup/_second_section.scss';
+@import 'pages/signup/_third_section.scss';
+@import 'pages/signup/_fourth_section.scss';
+@import 'pages/signup/_fifth_section.scss';
+@import 'pages/signup/_sixth_section.scss'; */
