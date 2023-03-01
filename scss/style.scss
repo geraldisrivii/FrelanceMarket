@@ -6,15 +6,16 @@
 
 // ? Components
 @import "components/_nav_bar";
+@import "components/description-element";
 
 // ! Pages
 
 // landing page
 
 @import 'pages/landing/_first_section.scss';
-/* @import 'pages/landing/_second_section.scss';
+@import 'pages/landing/_second_section.scss';
 @import 'pages/landing/_third_section.scss';
-@import 'pages/landing/_fourth_section.scss';
+/* @import 'pages/landing/_fourth_section.scss';
 @import 'pages/landing/_fifth_section.scss';
 @import 'pages/landing/_sixth_section.scss'; */
 

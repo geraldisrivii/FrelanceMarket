@@ -1,0 +1,25 @@
+.video-box {
+    object-fit: contain;
+    width: 100%;
+    z-index: -1;
+}
+.description-box {
+    min-width: 30%;
+    max-width: 450px;
+    padding: 15px;
+    /* background-color: rgba($color: gray, $alpha: 0.8); */
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    &__header {
+        color: white;
+    }
+    &__text {
+        color: white;
+    }
+}
+.first-section-landing{
+    position: relative;
+    margin-bottom: 80px;
+}

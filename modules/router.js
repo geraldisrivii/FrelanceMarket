@@ -8,20 +8,20 @@ let xmlHttpPost = value => {
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == 200) {
             page.innerHTML = xhr.responseText;
-            if (window.location.href.slice(window.location.href.indexOf('#') + 1) == 'landing') {
-                pagination('.review-box', 'SomeDirectory', 30, 500, 'multiple');
-            }
+            /* if (window.location.href.slice(window.location.href.indexOf('#') + 1) == 'projects') {
+                pagination('.review-box', 'projects', 20, 100);
+            } */
         }
     }
     xhr.send(`action=${value}`);
 }
 window.addEventListener("load", function () {
     let url = window.location.href;
-    if(url == 'http://' + window.location.hostname + '/'){
+    if (url == 'http://' + window.location.hostname + '/') {
         console.log(url);
         xmlHttpPost('landing')
     }
-    else{
+    else {
         console.log(url.slice(url.indexOf('#') + 1));
         xmlHttpPost(url.slice(url.indexOf('#') + 1))
     }

@@ -1,0 +1,7 @@
+.second-section-landing {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 10px;
+    margin-bottom: 80px;
+}

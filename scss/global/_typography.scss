@@ -1,0 +1,13 @@
+@mixin header($color, $font-size, $font-weight, $letter-spacing) {
+    font-weight:  $font-weight;
+    font-size: $font-size;
+    letter-spacing: $letter-spacing;
+    color: $color;
+}
+
+.main-header {
+    @include header(black, 3.5rem, 700, 0.2rem);
+}
+.sub-header{
+    @include header(black, 2.5rem, 300, 0.4rem);
+}
